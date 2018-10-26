@@ -1,0 +1,26 @@
+{
+  "name": "rtk",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://minosvasilias.github.io/kanjigrid",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-cookie": "^3.0.4",
+    "react-dom": "^16.5.2",
+    "react-ga": "^2.5.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "universal-cookie": "^3.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
