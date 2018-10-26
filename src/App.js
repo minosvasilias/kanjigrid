@@ -2,6 +2,7 @@ import React, { Component, TimeUnit } from 'react';
 import ReactDOM from "react-dom";
 import { Link, withRouter } from 'react-router-dom';
 import ReactGA from "react-ga";
+import history from './history';
 
 import "./index.css";
 
@@ -141,7 +142,7 @@ class App extends Component {
 
   onClick(i){
     this.setState({selectedkanji: i});
-    this.props.history.push("/"+(i+1));
+    history.push("/"+(i+1));
   }
 
   radicalClick(radical){

@@ -21,7 +21,7 @@ ReactDOM.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Route path="/" component={logPageView} />
-        <Route path="/" component={App} />
+        <Route exact path="/" component={App} />
         <Route path="/:kanji" component={App} />
       </div>
     </BrowserRouter>,
