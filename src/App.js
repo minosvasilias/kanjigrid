@@ -142,7 +142,7 @@ class App extends Component {
 
   onClick(i){
     this.setState({selectedkanji: i});
-    history.push("/"+(i+1));
+    history.push(process.env.PUBLIC_URL+"/"+(i+1));
   }
 
   radicalClick(radical){
